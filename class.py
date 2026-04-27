@@ -18,6 +18,10 @@ toy_a = toy('small', '10$', 'red', '2005')
 toy_b = toy('medium', '15$', 'blue', '2018')
 toy_c = toy('large', '32$', 'yellow', '2017')
 
-toy_a.detail()
-toy_b.detail()
-toy_c.detail()
+toys = []
+toys.append(toy_a)
+toys.append(toy_b)
+toys.append(toy_c)
+
+for i in toys:
+    i.detail()
